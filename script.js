@@ -26,13 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
             const parcela = document.getElementById('parcela').value;
             const mesesopcoes = [6, 12, 18, 24, 36, 48, 60, 72];
 
+console.log(parcela)
+
             if (!valorinput || !banco || !parcela) {
                 alert("Preencha todos os campos!");
                 return;
             }
 
             const valor = parseFloat(valorinput);
-            const meses = mesesopcoes[parcela - 1];
+            const meses = parcela;
             const taxa = taxas[banco];
             const valorfinal = valor * Math.pow(taxa, meses);
             const valorparcela = valorfinal / meses;

@@ -291,5 +291,10 @@ h5 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+  }
+
+  .voltar{
+    margin: 0 auto;
   }
 }
